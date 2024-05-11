@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Крестики нолики</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body onload="loadGame()">
+  <div class="container" id="splashContainer">
+    <h2>
+      Нажмите, чтобы начать!
+    </h2>
+
+    <h4>Добро пожаловать в игру Крестики-нолики!</h1>
+    <p>Приглашаем вас сыграть в эту захватывающую игру.</p>
+    <p>Удачи!</p>
+  </div>
+  <div class="container" hidden id="container">
+    <h1>Крестики нолики</h1>
+    <div class="board" id="board"></div>
+    <div class="options">
+      <label for="mode">Выбрать режим игры:</label>
+      <select id="mode" onchange="changeGameMode()">
+        <option value="0">Против компьютера</option>
+        <option value="1">2 игрока</option>
+      </select>
+      <br /> <br />
+      <span class="button" onclick="startGame()">Переиграть</span>
+      <span hidden class="button" id="fullscreenButton" onclick="openFullscreen()">Fullscreen</span>
+    </div>
+  </div>
+  <footer class="container">
+    <p>Автор: Пинских Сергей Александрович</p>
+    <p>Проект: Крестики-нолики</p>
+    <p>Лицензия: GPL2</p>
+    <a href="https://github.com/Cthuj27/cthuj27.github.io" target="_blank">
+      <span class="image"></span>
+    </a>
+</footer>
+
+</body>
+
+</html>
